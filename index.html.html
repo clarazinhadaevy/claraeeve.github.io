@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TE AMO</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/josephsophia');
+        @import url('https://fonts.cdnfonts.com/css/montserrat');
+        body{
+            background-image:url("https://marketplace.canva.com/EAGBzICL4nk/1/0/1600w/canva-pink-and-blue-cute-desktop-wallpaper-EQcU9lTQ_-Q.jpg");
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+           
+
+        }
+        .headstyle{
+            font-size: 100px;
+            font-family: 'josephsophia', sans-serif;
+            color: #AA0E84;
+            text-align:center;
+          
+            }
+            #main-paragraph, #paragdois, #paragtres { 
+                
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+                text-align: center;
+                font-size: 30px;
+                
+            }
+              #mybutton1, #mybutton2, #mybutton3{
+                
+                margin: auto;
+                padding: 10px 20px;
+                font-size: 15px;
+                cursor: pointer;
+                border: none;
+                margin-top: 2%;
+                background-color: transparent;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end; /* Alinha os botões ao final do contêiner */
+                 
+            
+        }
+                
+        #mybutton1:hover, #mybutton2:hover, #mybutton3:hover{
+                display: block;
+                margin: auto;
+                padding: 10px 20px;
+                color:#AA0E84;
+                font-weight: 400;
+                font-size: 18px;
+                cursor: pointer;
+                border: none;
+                margin-top: 2%;
+                background-color: transparent;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="headstyle"> Minha Clara</h1>
+    <p id="main-paragraph"> Se eu pudesse roubar um pedaço do céu, traria a lua para iluminar teus sonhos, tecendo constelações no brilho dos teus olhos, onde meu coração encontra morada.</p>
+        <p id="paragdois"> </p>
+        <p id="paragtres"> </p>
+    </body>
+    <footer>
+    <button type="button" onclick="texto1()" id="mybutton1"; >PAGINA 1</button>
+    <button type="button" onclick="texto2()" id="mybutton2"; >PAGINA 2</button>
+    <button type="button" onclick="texto3()" id="mybutton3"; >PAGINA 3</button>
+</footer>
+
+<script>
+    function texto1() {
+        document.getElementById("main-paragraph").innerHTML = "Se eu pudesse roubar um pedaço do céu, traria a lua para iluminar teus sonhos, tecendo constelações no brilho dos teus olhos, onde meu coração encontra morada.";
+        document.getElementById("paragdois").innerHTML = "";
+        document.getElementById("paragtres").innerHTML = "";
+        document.body.style.backgroundImage = "url(https://marketplace.canva.com/EAGBzICL4nk/1/0/1600w/canva-pink-and-blue-cute-desktop-wallpaper-EQcU9lTQ_-Q.jpg)";
+    }
+
+    function texto2() {
+        document.getElementById("paragdois").innerHTML = "Teu toque é brisa que embala minha alma, um sol que aquece até os dias nublados, teus lábios são versos que nunca terminam, um poema escrito nas curvas do tempo.";
+        document.getElementById("main-paragraph").innerHTML = "";
+        document.getElementById("paragtres").innerHTML = "";
+        document.body.style.backgroundImage = "url(https://images.unsplash.com/photo-1559251606-c623743a6d76?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
+        document.body.style.backgroundSize = "cover";
+    }
+
+    function texto3() {
+        document.getElementById("paragtres").innerHTML = "Em teu abraço, o universo se curva, pois nada é maior que o amor que nos cerca. És minha estrela, meu norte, meu lar, meu sempre, meu tudo, meu amar.";
+        document.getElementById("main-paragraph").innerHTML = "";
+        document.getElementById("paragdois").innerHTML = "";
+        document.body.style.backgroundImage = "url(https://images.unsplash.com/photo-1503455637927-730bce8583c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
+        setTimeout(function() {
+    alert('Desculpa pela piadinha');
+}, 6000);
+   }
+</script>
+</html>
